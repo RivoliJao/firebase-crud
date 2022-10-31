@@ -21,28 +21,51 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-body">
-              <h1 class="h4">Add Task</h1>
+              <h1 class="h4">Criação de Personagens</h1>
 
               <form id="task-form">
-                <label for="title">Title:</label>
+                <label for="nome">Nome:</label>
                 <input
                   type="text"
-                  id="task-title"
+                  id="task-nome"
                   class="form-control mb-3"
                   class="My First Title"
-                  placeholder="Task Title"
+                  placeholder="Digite o Nome do Personagem"
                   autofocus
                 />
 
-                <label for="description">Description:</label>
-                <textarea
-                  id="task-description"
-                  rows="3"
+                <label for="sexo">Sexo:</label>
+                <input
+                  type="text"
+                  id="task-sexo"
                   class="form-control mb-3"
-                  placeholder="Task Description"
-                ></textarea>
+                  class="My First Title"
+                  placeholder="Digite o Sexo do Personagem"
+                  autofocus
+                />
+                <div id="classe" class="dropdown">Classe
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="selecaodeclasse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="selecaodeclasse">
+                    <a class="dropdown-item" href="#">Guerreiro</a>
+                    <a class="dropdown-item" href="#">Mago</a>
+                    <a class="dropdown-item" href="#">Caçador</a>
+                    <a class="dropdown-item" href="#">Curandeiro</a>
+                  </div>
+                </div> 
+                <br>
+                <label for="idade">Idade:</label>
+                <input
+                  type="text"
+                  id="task-idade"
+                  class="form-control mb-3"
+                  class="My First Title"
+                  placeholder="Digite a Idade do Personagem"
+                  autofocus
+                />
+                
 
-                <button class="btn btn-primary" id="btn-task-form">Save</button>
+                <button class="btn btn-primary" id="btn-task-form">Salvar</button>
               </form>
             </div>
           </div>
